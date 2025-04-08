@@ -1,0 +1,11 @@
+name: My first workflow
+
+on:
+  push:
+    branches:
+      - main
+      - release/**
+  pull_request:
+    types: [opened, assigned]
+  schedule:
+    - cron: '*/15 * * * *'  # 매 15분마다 실행
