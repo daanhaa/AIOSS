@@ -22,4 +22,4 @@ jobs:
           
       - name: Sync files to S3
         run: |
-          aws s3 sync ./dist s3://my-github-deploy-bucket --delete
+          aws s3 sync ./dist1 s3://my-github-deploy-bucket --delete
